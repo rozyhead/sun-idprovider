@@ -3,4 +3,4 @@ package jp.co.sunarch.apps.idprovider.model.oauth2
 /**
  * リフレッシュトークン。
  */
-class RefreshToken
+data class RefreshToken(val value: String)

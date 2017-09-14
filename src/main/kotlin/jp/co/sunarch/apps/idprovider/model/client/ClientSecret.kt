@@ -3,4 +3,4 @@ package jp.co.sunarch.apps.idprovider.model.client
 /**
  * クライアントパスワード
  */
-class ClientSecret
+data class ClientSecret(val value: String)

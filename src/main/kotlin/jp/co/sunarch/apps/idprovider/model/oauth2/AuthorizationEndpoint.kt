@@ -3,7 +3,7 @@ package jp.co.sunarch.apps.idprovider.model.oauth2
 /**
  * @author takeshi
  */
-interface AuthorizationEndpoint<REQ, RESP> {
+interface AuthorizationEndpoint<REQ, out RESP> {
 
   fun authorizationRequestFactory(): EndpointRequestFactory<REQ>
 

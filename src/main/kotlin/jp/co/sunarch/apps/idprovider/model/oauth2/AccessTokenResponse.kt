@@ -3,13 +3,11 @@ package jp.co.sunarch.apps.idprovider.model.oauth2
 /**
  * @author takeshi
  */
-class AccessTokenResponse {
-
-  private val accessToken: AccessToken? = null
-  private val tokenType: AccessTokenType? = null
-  private val expiresIn: Long = 0
-  private val refreshToken: RefreshToken? = null
-  private val scope: Set<Scope>? = null
-
-}
+data class AccessTokenResponse(
+    val accessToken: AccessToken,
+    val tokenType: AccessTokenType,
+    val expiresIn: Long?,
+    val refreshToken: RefreshToken?,
+    val scope: Set<Scope>?
+)
 

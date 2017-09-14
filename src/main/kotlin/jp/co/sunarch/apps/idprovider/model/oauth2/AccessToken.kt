@@ -3,4 +3,4 @@ package jp.co.sunarch.apps.idprovider.model.oauth2
 /**
  * アクセストークン。
  */
-class AccessToken
+data class AccessToken(val value: String)
