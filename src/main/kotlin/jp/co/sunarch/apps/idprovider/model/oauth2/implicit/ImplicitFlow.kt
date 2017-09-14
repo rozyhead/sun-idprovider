@@ -9,14 +9,12 @@ import jp.co.sunarch.apps.idprovider.model.oauth2.AccessTokenResponse
  */
 class ImplicitFlow : AuthorizationEndpoint<ImplicitAuthorizationRequest, AccessTokenResponse> {
 
-  override fun authorizationRequestFactory(): EndpointRequestFactory<ImplicitAuthorizationRequest>? {
-    // TODO
-    return null
+  override fun authorizationRequestFactory(): EndpointRequestFactory<ImplicitAuthorizationRequest> {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
-  override fun authorize(request: ImplicitAuthorizationRequest): AccessTokenResponse? {
-    // TODO
-    return null
+  override fun authorize(request: ImplicitAuthorizationRequest): AccessTokenResponse {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
 }

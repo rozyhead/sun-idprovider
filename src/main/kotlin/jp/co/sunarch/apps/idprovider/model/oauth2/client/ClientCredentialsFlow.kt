@@ -9,14 +9,11 @@ import jp.co.sunarch.apps.idprovider.model.oauth2.AccessTokenResponse
  */
 class ClientCredentialsFlow : TokenEndpoint<ClientCredentialsAccessTokenRequest, AccessTokenResponse> {
 
-  override fun tokenRequestFactory(): EndpointRequestFactory<ClientCredentialsAccessTokenRequest>? {
-    // TODO
-    return null
+  override fun tokenRequestFactory(): EndpointRequestFactory<ClientCredentialsAccessTokenRequest> {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
-  override fun createToken(request: ClientCredentialsAccessTokenRequest): AccessTokenResponse? {
-    // TODO
-    return null
+  override fun createToken(request: ClientCredentialsAccessTokenRequest): AccessTokenResponse {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
-
 }

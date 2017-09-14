@@ -10,24 +10,20 @@ import jp.co.sunarch.apps.idprovider.model.oauth2.AccessTokenResponse
  */
 class AuthorizationCodeFlow : AuthorizationEndpoint<AuthorizationCodeAuthorizationRequest, AuthorizationCodeAuthorizationResponse>, TokenEndpoint<AuthorizationCodeAccessTokenRequest, AccessTokenResponse> {
 
-  override fun authorizationRequestFactory(): EndpointRequestFactory<AuthorizationCodeAuthorizationRequest>? {
-    // TODO
-    return null
+  override fun authorizationRequestFactory(): EndpointRequestFactory<AuthorizationCodeAuthorizationRequest> {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
-  override fun tokenRequestFactory(): EndpointRequestFactory<AuthorizationCodeAccessTokenRequest>? {
-    // TODO
-    return null
+  override fun authorize(request: AuthorizationCodeAuthorizationRequest): AuthorizationCodeAuthorizationResponse {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
-  override fun authorize(request: AuthorizationCodeAuthorizationRequest): AuthorizationCodeAuthorizationResponse? {
-    // TODO
-    return null
+  override fun tokenRequestFactory(): EndpointRequestFactory<AuthorizationCodeAccessTokenRequest> {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
-  override fun createToken(request: AuthorizationCodeAccessTokenRequest): AccessTokenResponse? {
-    // TODO
-    return null
+  override fun createToken(request: AuthorizationCodeAccessTokenRequest): AccessTokenResponse {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
 }

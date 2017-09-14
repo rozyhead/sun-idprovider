@@ -8,14 +8,12 @@ import jp.co.sunarch.apps.idprovider.model.oauth2.EndpointRequestFactory
  */
 class HybridFlow : AuthorizationEndpoint<HybridAuthorizationRequest, HybridAuthorizationResponse> {
 
-  override fun authorizationRequestFactory(): EndpointRequestFactory<HybridAuthorizationRequest>? {
-    // TODO
-    return null
+  override fun authorizationRequestFactory(): EndpointRequestFactory<HybridAuthorizationRequest> {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
-  override fun authorize(request: HybridAuthorizationRequest): HybridAuthorizationResponse? {
-    // TODO
-    return null
+  override fun authorize(request: HybridAuthorizationRequest): HybridAuthorizationResponse {
+    TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
   }
 
 }
