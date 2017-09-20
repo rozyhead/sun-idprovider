@@ -11,6 +11,15 @@ enum class ResponseType {
 
   TOKEN,
 
-  ID_TOKEN
+  ID_TOKEN;
+
+  companion object {
+    fun of(name: String): ResponseType? = when (name) {
+      "code" -> CODE
+      "token" -> TOKEN
+      "id_token" -> ID_TOKEN
+      else -> null
+    }
+  }
 
 }

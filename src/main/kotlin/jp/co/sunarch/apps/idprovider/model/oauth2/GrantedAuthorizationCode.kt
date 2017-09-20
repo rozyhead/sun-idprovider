@@ -15,5 +15,18 @@ data class GrantedAuthorizationCode(
     val clientId: ClientId,
     val redirectUri: RedirectUri?,
     val scopes: Set<Scope>,
-    val invalidated: Boolean
-)
+    val invalidated: Boolean = false
+) {
+
+  fun isValid(now: LocalDateTime): Boolean {
+    if (invalidated) {
+      return false
+    }
+
+    if (grantedAt.plusSeconds(expiresInSeconds.toLong()) < now) {
+      return false
+    }
+
+    return true
+  }
+}

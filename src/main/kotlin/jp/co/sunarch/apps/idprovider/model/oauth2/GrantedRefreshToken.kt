@@ -14,5 +14,5 @@ data class GrantedRefreshToken(
     val scopes: Set<Scope>,
     val accessToken: AccessToken,
     val authorizationCode: AuthorizationCode?,
-    val invalidated: Boolean
+    val invalidated: Boolean = false
 )

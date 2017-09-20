@@ -3,4 +3,4 @@ package jp.co.sunarch.apps.idprovider.model.oauth2
 /**
  * リダイレクトURI
  */
-class RedirectUri
+data class RedirectUri(val value: String)

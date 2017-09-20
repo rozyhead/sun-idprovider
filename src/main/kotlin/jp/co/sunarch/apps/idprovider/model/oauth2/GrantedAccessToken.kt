@@ -15,6 +15,6 @@ data class GrantedAccessToken(
     val expiresInSeconds: Int,
     val clientId: ClientId,
     val scopes: Set<Scope>,
-    val authorizationCode: AuthorizationCode?,
-    val invalidated: Boolean
+    val authorizationCode: AuthorizationCode? = null,
+    val invalidated: Boolean = false
 )
