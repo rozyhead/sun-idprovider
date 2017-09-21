@@ -1,4 +1,4 @@
-box: openjdk:8u141-alpine
+box: openjdk:8u141-jdk
 build:
   steps:
     - script:
